@@ -1,32 +1,14 @@
-const lang = prompt('Ваш язык? | Your language?', 'ru');
-const langArray = {
-    'ru': ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'],
-    'en': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-};
 
-if (lang === 'ru') {
-    console.log(langArray.ru);
-} else if (lang === 'en') {
-    console.log(langArray.en);
-} else {
-    console.log('Your language is undefined');
-}
+const money = prompt("Ваш месячный доход?");
+const addExpenses = prompt("Перечислите возможные расходы за рассчитываемый период через запятую");
+const deposit = prompt("Есть ли у вас депозит в банке?");
+const expenses1 = prompt("Введите обязательную статью расходов");
+const expenses2 = prompt("Введите обязательную статью расходов");
+const amount1 = prompt ("Во сколько это обойдется?");
+const amount2 = prompt ("Во сколько это обойдется?");
 
-switch (lang) {
-    case 'ru':
-        console.log(langArray.ru);
-        break;
-    case 'en':
-        console.log(langArray.en);
-        break;
-    default:
-        console.log('Your language is undefined');
-}
+console.log(typeof money);
+console.log(typeof addExpenses);
+console.log(typeof deposit);
 
-console.log(langArray[lang]);
 
-const namePerson = prompt('Ваше имя?');
-const resultName = (namePerson === 'Артём') ? 'Директор' :
-    (namePerson === 'Артем') ? 'Директор' :
-        (namePerson === 'Максим') ? 'Преподаватель' : 'Студент';
-console.log(resultName);
